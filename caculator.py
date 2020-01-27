@@ -1,6 +1,7 @@
 import re
 print("THE CALCULATOR")
-print("Type 'Quit' To Exit\n")
+print("Type 'Quit' To Exit")
+print("Multiply With Zero To Calculate New Equation\n")
 
 previous = 0
 run = True
@@ -10,10 +11,10 @@ def perform_math():
     global previous
     equation=""
     if previous==0:
-        equation=input("enter equation")
+        equation=input("Enter Equation To Calculate")
     else:
         equation= input(str(previous))
-    if equation.lower()=='quit':
+    if equation.lower()=="quit":
         print("Good Bye ,Man!")
         run=False
     else:
